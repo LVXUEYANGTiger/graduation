@@ -1,0 +1,32 @@
+eureka:
+    client:
+        service-url:
+            defaultZone: http://127.0.0.1:7001/eureka
+    instance:
+        prefer-ip-address: true
+feign:
+    hystrix:
+        enabled: true
+server:
+    port: 18081
+spring:
+    application:
+        name: service-discuss
+    mongodb:
+        authentication-database: admin
+        connectTimeout: 1000
+        connectionsPerHost: 8
+        database: discuss
+        host: 121.5.146.63
+        maxWaitTime: 1500
+        minConnectionsPerHost: 3
+        password: 123456
+        port: 27017
+        socketKeepAlive: true
+        socketTimeout: 1500
+        threadsAllowedToBlockForConnectionMultiplier: 4
+        uri: mongodb://admin
+        username: admin
+swagger:
+    enable: true
+
